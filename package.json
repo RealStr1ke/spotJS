@@ -1,11 +1,21 @@
 {
   "name": "spotjs",
-  "module": "app.js",
+  "author": "Thandi R. Menelas <TMenelas@outlook.com>",
+  "description": "A direct downloader for songs and podcasts from Spotify.",
+  "main": "./src/app.js",
   "type": "module",
+  "bin": {
+    "spotjs-cli": "./bin/cli.js",
+    "spotjs-tui": "./bin/tui.js"
+  },
   "devDependencies": {
     "bun-types": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0"
   }
 }
